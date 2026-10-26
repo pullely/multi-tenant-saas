@@ -44,7 +44,7 @@
     "stage": {
       "vars": {
         "ENVIRONMENT": "stage",
-        "CONSOLE_CUSTOM_DOMAIN": "stage.test.dev",
+        "CONSOLE_CUSTOM_DOMAIN": "stage.multi-tenant-saas.example.com",
         "SOLO_MODE": "true"
       },
       "hyperdrive": [
@@ -113,7 +113,7 @@
     "prod": {
       "vars": {
         "ENVIRONMENT": "prod",
-        "CONSOLE_CUSTOM_DOMAIN": "prod.test.dev",
+        "CONSOLE_CUSTOM_DOMAIN": "prod.multi-tenant-saas.example.com",
         "SOLO_MODE": "true"
       },
       "hyperdrive": [
