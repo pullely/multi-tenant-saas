@@ -17,8 +17,8 @@ repo is the source of truth.
 ## Verify
 
 ```bash
-curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-stage.test-multi-tenant-saas.workers.dev/health
-curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-prod.test-multi-tenant-saas.workers.dev/health
+curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-stage.nexo-7be.workers.dev/health
+curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-prod.nexo-7be.workers.dev/health
 ```
 
 200 = deployed and healthy. A **404 means nothing is deployed at that
@@ -34,8 +34,11 @@ a persistent failure is real.
   infrastructure terraform upstream has not applied — check that lane
   first; within one convergence run the DAG guarantees order.
 - **Service-binding target missing (Cloudflare 10143)**: the target
-  Worker does not exist yet on this account — converge the fleet before
-  this lane (the bootstrap's two-pass landing handles first boot).
+  Worker does not exist yet on this account. Every binding holder waits on
+  `policy-worker`, whose pre-deploy uploads a placeholder for each missing
+  target (`tooling/deploy/fleet-stubs.mjs`), so this should not happen — if
+  it does, this component does not declare `dependsOn: policy-worker` with
+  `mode: enforced`.
 - **Smoke fails right after a first deploy**: a brand-new workers.dev
   route can 4xx for a few seconds; the lane already retries — persistent
   failure means a real regression.
