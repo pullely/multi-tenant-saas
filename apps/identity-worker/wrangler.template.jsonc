@@ -37,7 +37,7 @@
         "GITHUB_OAUTH_CLIENT_ID": "",
         "GOOGLE_OAUTH_CLIENT_ID": "",
         "OAUTH_REDIRECT_BASE_URL": "",
-        "OAUTH_ALLOWED_CONSOLE_ORIGINS": "https://multi-tenant-saas-web-console-next-dev.test-lumen.workers.dev",
+        "OAUTH_ALLOWED_CONSOLE_ORIGINS": "https://multi-tenant-saas-web-console-next-dev.test-multi-tenant-saas.workers.dev",
         "SOLO_MODE": "true"
       }
     },
@@ -47,8 +47,8 @@
         "DEBUG_DELIVERY": "true",
         "GITHUB_OAUTH_CLIENT_ID": "Ov23liKBsjAqJJsmBavV",
         "GOOGLE_OAUTH_CLIENT_ID": "441163126775-7fabhvpbl9tsga921rklpdlde7mduq34.apps.googleusercontent.com",
-        "OAUTH_REDIRECT_BASE_URL": "https://multi-tenant-saas-api-edge-stage.test-lumen.workers.dev",
-        "OAUTH_ALLOWED_CONSOLE_ORIGINS": "https://stage.test.dev,https://multi-tenant-saas-web-console-next-stage.test-lumen.workers.dev",
+        "OAUTH_REDIRECT_BASE_URL": "https://multi-tenant-saas-api-edge-stage.test-multi-tenant-saas.workers.dev",
+        "OAUTH_ALLOWED_CONSOLE_ORIGINS": "https://stage.test.dev,https://multi-tenant-saas-web-console-next-stage.test-multi-tenant-saas.workers.dev",
         "SOLO_MODE": "true"
       },
       "hyperdrive": [
@@ -78,8 +78,8 @@
         "DEBUG_DELIVERY": "false",
         "GITHUB_OAUTH_CLIENT_ID": "Ov23lilp2aoyeBDVU8Vc",
         "GOOGLE_OAUTH_CLIENT_ID": "441163126775-7fabhvpbl9tsga921rklpdlde7mduq34.apps.googleusercontent.com",
-        "OAUTH_REDIRECT_BASE_URL": "https://multi-tenant-saas-api-edge-prod.test-lumen.workers.dev",
-        "OAUTH_ALLOWED_CONSOLE_ORIGINS": "https://prod.test.dev,https://multi-tenant-saas-web-console-next-prod.test-lumen.workers.dev",
+        "OAUTH_REDIRECT_BASE_URL": "https://multi-tenant-saas-api-edge-prod.test-multi-tenant-saas.workers.dev",
+        "OAUTH_ALLOWED_CONSOLE_ORIGINS": "https://prod.test.dev,https://multi-tenant-saas-web-console-next-prod.test-multi-tenant-saas.workers.dev",
         "SOLO_MODE": "true"
       },
       "hyperdrive": [

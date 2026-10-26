@@ -3,7 +3,7 @@
 Cloudflare Worker for the API edge Runtime
 
 Part of the multi-tenant-saas runtime: a Cloudflare Worker deployed per
-environment (`stage`, `prod`; `dev` is verify-only). Public entry point: `https://multi-tenant-saas-api-edge-{stage,prod}.test-lumen.workers.dev`
+environment (`stage`, `prod`; `dev` is verify-only). Public entry point: `https://multi-tenant-saas-api-edge-{stage,prod}.test-multi-tenant-saas.workers.dev`
 
 ## Depends on
 
