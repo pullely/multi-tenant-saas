@@ -1,11 +1,9 @@
 {
   "reponame": "multi-tenant-saas",
   "productname": "Multi Tenant Saas",
-  "productdomain": "test.dev",
-  "apibaseurl": "https://api.test.dev",
-  "subdomain": "test-lumen",
+  "productdomain": "",
+  "subdomain": "nexo-7be",
   "orunWorkspace": "org_a4a70a41d4804f0fbc78081cc041b760",
   "githuborg": "pullely",
-  "epicSlug": "infra-baselining-multi-tenant-saas",
-  "domain": false
+  "epicSlug": "infra-baselining-multi-tenant-saas"
 }

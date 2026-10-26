@@ -17,8 +17,8 @@ repo is the source of truth.
 ## Verify
 
 ```bash
-curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-stage.test-lumen.workers.dev/health
-curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-prod.test-lumen.workers.dev/health
+curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-stage.test-multi-tenant-saas.workers.dev/health
+curl -s -o /dev/null -w '%{http_code}\n' https://multi-tenant-saas-api-edge-prod.test-multi-tenant-saas.workers.dev/health
 ```
 
 200 = deployed and healthy. A **404 means nothing is deployed at that
